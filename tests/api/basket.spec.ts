@@ -27,6 +27,7 @@ test.beforeAll(async ({ request, baseURL }) => {
 
 
 test.describe('/rest/basket/:id', () => {
+  
   test('GET existing basket by id is not allowed via public API', async ({ request, baseURL }) => {
     const res = await request.get(`${baseURL}/rest/basket/1`);
     expect(res.status()).toBe(401);
