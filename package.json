@@ -1,0 +1,15 @@
+{
+  "name": "juice-shop-playwright-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "install:playwright": "npx playwright install",
+    "ci": "npm ci && npx playwright install && npm test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "typescript": "^4.9.5"
+  }
+}
